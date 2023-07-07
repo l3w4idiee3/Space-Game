@@ -20,10 +20,10 @@ function createEnemies(ctx, canvas, enemyImg) {
     }
 }
 window.onload = async() => {
-    canvas = document.getElementById("canvas");
-    ctx = canvas.getContext("2d");
-    const heroImg = await loadTexture('assets/player.png')
-    const enemyImg = await loadTexture('assets/enemyShip.png')
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+    const heroImg = await loadTextures('assets/player.png')
+    const enemyImg = await loadTextures('assets/enemyShip.png')
   
     ctx.fillStyle = 'black';
     ctx.fillRect(0,0, canvas.width, canvas.height);
